@@ -1,0 +1,7 @@
+social-auth-app-django
+django-crispy-forms
+django-debug-toolbar
+django
+pillow
+
+# pip install -r requirements.txt 

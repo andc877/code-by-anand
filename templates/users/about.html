@@ -1,0 +1,222 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+
+
+{% block css %}
+
+{% endblock css %}
+
+
+
+
+{% block content %}
+
+
+
+
+<section id="why-us" class="why-us section-bg my-1">
+  <div class="container-fluid" data-aos="fade-up">
+
+    <div class="row">
+
+      <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+        <div class="content">
+          <h3> <strong>About Towards Data Science</strong></h3>
+          <p>
+            Towards Data Science Inc. is a corporation registered in Canada. 
+            Using Medium, we provide a platform for thousands of people to exchange ideas and to expand our understanding of data science > bit.ly/about-tds.
+             The quality of our work would not be the same without our volunteer Editorial Associates > bit.ly/tds-team.
+              While we allow independent authors to publish articles and videos in accordance with our rules and guidelines, we do not endorse each author’s contribution > bit.ly/tds-terms. To learn how to discover the best content and make the most of TDS, visit this page > bit.ly/tds-get-the-most. Need to contact us or report an error? Let us know: bit.ly/contact-tds.
+
+           
+          </p>
+        </div>
+
+        <div class="accordion-list">
+         
+        </div>
+
+      </div>
+
+      <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("{% static 'img/1.jpg' %}");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+    </div>
+
+  </div>
+</section><!-- End Why Us Section -->
+
+
+
+
+
+
+
+<section id="about" class="about">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>About Us</h2>
+    </div>
+
+    <div class="row content">
+      <div class="col-lg-6">
+        <p>
+
+          The evolution of AI has changed the entire 21st century in terms of technology.
+          AI has told the spotlight and its advancement are quicker
+          than we are predicted with such an exponential growth in AI.
+          Machine learning is the becoming the most training field of the 21st century.
+          It is starting to redefine the way we live it’s time we understood what it is and why it matters.
+          <br><br>
+          AI-arsenal is model hosting website.
+          AI-arsenal is a categorized directory of libraries and tools for all AI developer .
+          it’s developer portal with tools and libraries.
+          On our website AI -Developer can save his model and access it whenever they have required.
+          Our website provides the way to download AI-model upload by other developer.
+          For uploading and downloading any AI-modal firstly developer has to register on our website .
+        
+
+        </p>
+        <!-- <ul>
+          <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+          <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
+          <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+        </ul> -->
+      </div>
+      <div class="col-lg-6 pt-4 pt-lg-0">
+        <p>
+          <pre>
+            <b>In order to generate AI-model we need:</b>
+     
+            •	Sample data with target attribute given.
+            •	AI-algorithm chosen according to the nature of target attributes.
+            
+            Process:
+            
+            •	Input the training dataset.
+            •	Let the AI learning algorithm run on data.
+            [The algorithm now learns and captures the pattern in the data]
+            •	Tune the parameter to control the learning of algorithm
+            •	After the algorithm finishes learning, the model is finally built.  
+          </pre>
+        </p>
+       
+      </div>
+      <a href="{% url 'dashboard' %}" class="btn-learn-more">Learn More</a>
+    </div>
+
+  </div>
+
+
+</section>
+
+
+<section id="team" class="team section-bg ">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Team</h2>
+      <p></p>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-6">
+        <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+          <div class="pic"><img src="{% static 'img/both.jpg' %} " class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4>Praveen Sngh</h4>
+            <span>Team Member</span>
+            <p></p>
+            <div class="social">
+              <a href=""><i class="ri-twitter-fill"></i></a>
+              <a href=""><i class="ri-facebook-fill"></i></a>
+              <a href=""><i class="ri-instagram-fill"></i></a>
+              <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mt-4 mt-lg-0">
+        <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+          <div class="pic"><img src="{% static 'img/both.jpg' %} " class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4>Prince Prajapati</h4>
+            <span>Team Member</span>
+            <p></p>
+            <div class="social">
+              <a href=""><i class="ri-twitter-fill"></i></a>
+              <a href=""><i class="ri-facebook-fill"></i></a>
+              <a href=""><i class="ri-instagram-fill"></i></a>
+              <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- End About Us Section -->
+<!--  
+  <section id="skills" class="skills">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row">
+        <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+          <img src="assets/img/skills.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+          <h3>Voluptatem dignissimos provident quasi corporis voluptates</h3>
+          <p class="font-italic">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
+          </p>
+
+          <div class="skills-content">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Photoshop <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section> -->
+
+{% endblock content %}

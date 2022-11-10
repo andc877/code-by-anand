@@ -1,0 +1,478 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+
+
+
+{% block css %}
+<style>
+  /*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+
+
+  /* .carousel-inner {
+    width: 100%;
+    height: 100vh;
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .carousel-item {
+    height: 100vh;
+    position: top;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 40%;
+    text-transform: uppercase;
+    width: 100%;
+    right: 20%;
+    left: 0%;
+    transform: translateY(-50%);
+  }
+
+  .carousel-caption h5 {
+    color: aliceblue;
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+
+  }
+
+  .carousel-caption p {
+    color: aqua;
+    font-size: 2rem;
+    text-shadow: .1rem .1rem .5rem black;
+
+
+  }
+
+  .change_content::after {
+    content: '';
+    animation: changetext 10s infinite linear;
+  }
+
+  @keyframes changetext {
+
+    20% {
+      content: " is model hosting website"
+    }
+
+    60% {
+      content: "for Data Scientist Users"
+    }
+  } */
+</style>
+{% endblock css %}
+
+
+{% block content %}
+
+
+
+
+
+<section id="hero" class="d-flex align-items-center">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up"
+        data-aos-delay="200">
+        <h1>Better Solutions For Your AI-Business</h1>
+        <h2>AI-Arsenal is Model Hosting Website<br> for Data Scientist </h2>
+        <div class="d-lg-flex">
+          <a href="{% url 'dashboard' %}" class="btn-get-started scrollto">Get Started</a>
+          <a href="https://www.youtube.com/results?search_query=ml+model+edureka" class=" btn-get-started scrollto" data-vbtype="video"
+            data-autoplay="true"> Watch Video </a>
+        </div>
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+        <img src="{% static 'img/base.png' %}" class="img-fluid animated" alt="">
+      </div>
+    </div>
+  </div>
+
+</section><!-- End Hero -->
+
+<main id="main">
+
+  <!-- ======= Cliens Section ======= -->
+
+
+  <!-- ======= About Us Section ======= -->
+  <section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>About Us</h2>
+      </div>
+
+      <div class="row content">
+        <div class="col-lg-6">
+          <p>
+
+            The evolution of AI has changed the entire 21st century in terms of technology.
+            AI has told the spotlight and its advancement are quicker
+            than we are predicted with such an exponential growth in AI.
+            Machine learning is the becoming the most training field of the 21st century.
+            It is starting to redefine the way we live it’s time we understood what it is and why it matters.
+            <br><br>
+            AI-arsenal is model hosting website.
+            AI-arsenal is a categorized directory of libraries and tools for all AI developer .
+            it’s developer portal with tools and libraries.
+            On our website AI -Developer can save his model and access it whenever they have required.
+            Our website provides the way to download AI-model upload by other developer.
+            For uploading and downloading any AI-modal firstly developer has to register on our website .
+          
+
+          </p>
+          <!-- <ul>
+            <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+            <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
+            <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+          </ul> -->
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0">
+          <p>
+            <pre>
+              <b>In order to generate AI-model we need:</b>
+       
+              •	Sample data with target attribute given.
+              •	AI-algorithm chosen according to the nature of target attributes.
+              
+              Process:
+              
+              •	Input the training dataset.
+              •	Let the AI learning algorithm run on data.
+              [The algorithm now learns and captures the pattern in the data]
+              •	Tune the parameter to control the learning of algorithm
+              •	After the algorithm finishes learning, the model is finally built.  
+            </pre>
+          </p>
+         
+        </div>
+        <a href="{% url 'dashboard' %}" class="btn-learn-more">Learn More</a>
+      </div>
+
+    </div>
+  </section><!-- End About Us Section -->
+
+  <section id="team" class="team section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Team</h2>
+        <p></p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-6">
+          <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+            <div class="pic"><img src="{% static 'img/Praveen.png' %} " class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Praveen Sngh</h4>
+              <span>Team Member</span>
+              <p></p>
+              <div class="social">
+                <a href=""><i class="ri-twitter-fill"></i></a>
+                <a href=""><i class="ri-facebook-fill"></i></a>
+                <a href=""><i class="ri-instagram-fill"></i></a>
+                <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mt-4 mt-lg-0">
+          <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+            <div class="pic"><img src="{% static 'img/both.jpg' %} " class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Prince Prajapati</h4>
+              <span>Team Member</span>
+              <p></p>
+              <div class="social">
+                <a href=""><i class="ri-twitter-fill"></i></a>
+                <a href=""><i class="ri-facebook-fill"></i></a>
+                <a href=""><i class="ri-instagram-fill"></i></a>
+                <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+
+      </div>
+
+    </div>
+  </section><!-- End Team Section -->
+
+
+  <section id="cta" class="cta">
+    <div class="container" data-aos="zoom-in">
+
+      <div class="row">
+        <div class="col-lg-9 text-center text-lg-left">
+          <h3>Searching Model</h3>
+          <p>Searching is a very basic necessity when you store data in different data structures.<br>
+             The simplest appraoch is to go across every element in the data structure and match it with the value you are searching for.</p>
+        </div>
+        <div class="col-lg-3 cta-btn-container text-center">
+          <form class="form-inline" action="{% url 'search_ai_model' %}">
+            <div class="form-group">
+  
+              <input type="text" name="q" id="q" class="form-control " placeholder="model name"
+                aria-describedby="qhelp">
+              <!-- <label for="q" class="p-2"><i class="fa fa-search" aria-hidden="true"></i> </label> -->
+              <button class="btn btn-sm btn-primary">search</button>
+            </div>
+          </form>
+          <!-- <a class="cta-btn align-middle" href="{% url 'search_ai_model' %}">Call To Action</a> -->
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Cta Section -->
+
+
+  <!-- ======= Team Section ======= -->
+
+
+  <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>If you have a question or a comment, please call us on +91 7985042757 (9.30am to 5.30pm. Monday to Saturday.) or email us at pravinsingh0004@gmail.com or use the form below to contact us.</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-12 d-flex align-items-stretch">
+          <div class="info">
+            <div class="address">
+              <i class="icofont-google-map"></i>
+              <h4>Location:</h4>
+              <p>Lucknow,Uttar Pradesh, India, 226028</p>
+            </div>
+
+            <div class="email">
+              <i class="icofont-envelope"></i>
+              <h4>Email:</h4>
+              <p>pravinsingh0004@gmail.com.com</p>
+            </div>
+
+            <div class="phone">
+              <i class="icofont-phone"></i>
+              <h4>Call:</h4>
+              <p>+91 7985042757</p>
+            <!-- </div>
+
+            <iframe src="https://www.google.com/maps/place/Babu+Banarasi+Das+Northern+India+Institute+of+Technology/@26.8880915,81.0543987,17z/data=!3m1!4b1!4m5!3m4!1s0x399be20964bfd62f:0xe7f222598398a384!8m2!3d26.8880915!4d81.0565874" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+          </div> -->
+
+        </div>
+
+        
+      </div>
+
+    </div>
+  </section>
+
+  
+</main>
+
+<footer id="footer">
+
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>AI-Arsenal</h3>
+          <p>
+            BBDU,Lucknow <br>
+            Uttar Pradesh<br>
+            India <br><br>
+            <strong>Phone:</strong> +917985042757<br>
+            <strong>Email:</strong> pravinsingh0004@gmail.com.com<br>
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Team</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Social Networks</h4>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+          <div class="social-links mt-3">
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer-bottom clearfix">
+    <div class="copyright">
+      &copy; Copyright <strong><span>AI-Arsenal</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+      Designed by <a href="">Praveen Singh</a>
+    </div>
+  </div>
+</footer><!-- End Footer -->
+
+<a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+<div id="preloader"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- This is old content -->
+
+<!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="{% static 'img/4.jpeg' %}" alt="First slide">
+      <div class="carousel-caption d-md-block">
+        <h5>Welcome to Our website</h5>
+        <p>AI-Arsenal <span class="change_content"></span></p>
+
+        <p class="text-center"><a href="{% url 'login' %}" class="abt-overlay btn btn-sm btn-dark">Read More</a></p>
+         <p class="text-center"><a href="{% url 'register' %}" class="abt-overlay btn btn-sm btn-dark">SignUp</a></p> 
+      </div>
+    </div>
+  </div>
+</div>  -->
+
+<!-- 
+<div class="container">
+  <div class="row my-2" style="margin-bottom:40px;">
+    <div class="col-md-12 col-sm-8" style="text-align:center; margin:8px 0 15px 0;">
+
+      <h3 style="color:#870E41; font-weight:bold; font-size:32px; font-family:Calibri;">Introduction
+      </h3>
+
+    </div>
+
+    <div class="col-md-8 col-sm-4" style="text-align:justify;  font-family:Cambria; font-size:18px;  line-height:1.6;">
+
+      The evolution of AI has changed the entire 21st century in terms of technology.
+      AI has told the spotlight and its advancement are quicker
+      than we are predicted with such an exponential growth in AI.
+      Machine learning is the becoming the most training field of the 21st century.
+      It is starting to redefine the way we live it’s time we understood what it is and why it matters.
+      <br><br>
+      <pre>
+        In order to generate AI-model we need:
+ 
+        •	Sample data with target attribute given.
+        •	AI-algorithm chosen according to the nature of target attributes.
+        
+        Process:
+        
+        •	Input the training dataset.
+        •	Let the AI learning algorithm run on data.[The algorithm now learns and captures the pattern in the data]
+        •	Tune the parameter to control the learning of algorithm
+        •	After the algorithm finishes learning, the model is finally built.  
+      </pre>
+
+
+    </div>
+
+    <div class="col-md-4 col-sm-3  my-5">
+
+      <img src="{% static 'img/2.jpg' %}" width="100%" height="70%"><br><br>
+
+    </div>
+  </div>
+</div> -->
+
+<!-- <div class="container">
+  <div class="row my-2" style="margin-bottom:40px;">
+    <div class="col-md-12 col-sm-8" style="text-align:center; margin:8px 0 15px 0;">
+
+
+    </div>
+
+    <div class="col-md-4 col-sm-3">
+      <img src="{% static 'img/6.jpeg' %}" width="100%"><br><br>
+    </div>
+
+    <div class="col-md-8 col-sm-4" style="text-align:justify;  font-family:Cambria; font-size:18px;  line-height:1.6;">
+
+      AI-arsenal is model hosting website.
+      AI-arsenal is a categorized directory of libraries and tools for all AI developer .
+      it’s developer portal with tools and libraries.
+      On our website AI -Developer can save his model and access it whenever they have required.
+      Our website provides the way to download AI-model upload by other developer.
+      For uploading and downloading any AI-modal firstly developer has to register on our website .
+
+
+
+
+
+    </div>
+  </div>
+</div> -->
+
+
+<!-- 
+<app-footer _ngcontent-serverapp-c35="" _nghost-serverapp-c34="">
+  <footer _ngcontent-serverapp-c34="" class="container-fluid bg-dark my-0 py-3 text-light">
+    <p _ngcontent-serverapp-c34="" class="mb-0 text-center">Copyright © 2020-2021 Praveen Singh</p>
+  </footer>
+</app-footer> -->
+
+{% endblock content %}
+
+
+
+{% block js %}
+
+{% endblock js %}
